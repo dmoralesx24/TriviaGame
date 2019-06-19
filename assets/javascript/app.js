@@ -9,6 +9,20 @@
     $("#btn").on("click", function () {
         $(".pageTwo").show();
         $("#btn").hide();
+
+        var sec = 120;
+        var time = setInterval(myTimer, 1000);
+        
+        function myTimer() {
+            document.getElementById('timer').innerHTML = "Time Remaining: " + sec + " Seconds left";
+            sec--;
+            if (sec == -1) {
+                clearInterval(time);
+                return sumbitAnswers();
+            }
+                
+            
+        }
     })
 
     function sumbitAnswers() {
@@ -29,13 +43,7 @@
         var q10 = document.forms["quizForm"]["q10"].value;
 
         // if user misses question 
-        for (i = 1; i <= total; i++) {
-
-            if (eval('q' + i) == null || eval('q' + i) == '') {
-                alert("You missed question " + i);
-                return false;
-            }
-        }
+       
 
         // my correct answers 
         var answers = ["c", "b", "d", "a", "d", "a", "c", "b", "d", "c"];
@@ -50,14 +58,13 @@
                 $("#wrong").html("Incorrect: " + incorrect)
             }
         }
-
-        
         
         $(".pageTwo").hide();
         $("btn").hide();
         $("#thirdPage").show();
+       
         
-        return false;
+        return false; 
     } 
     
 
