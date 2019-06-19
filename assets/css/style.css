@@ -1,0 +1,58 @@
+
+body {
+    height: 100%;
+    background-image: url("../images/eagleswall.jpg");
+}
+
+h1 {
+    color: forestgreen;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    background: #DEB887;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+}
+
+#btn{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+input[type='submit'] {
+    background: forestgreen;
+    border: 0;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#thirdPage {
+    text-align: center;
+}
+
+#done {
+    color: forestgreen;
+}

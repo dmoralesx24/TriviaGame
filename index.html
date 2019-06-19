@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- My Css Stylesheet -->
+    <link rel="stylesheet" type = "text/css" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <!-- first shown -->
+        <header>
+            <h1>Philadelphia Eagles</h1>
+            <h2>Trivia Game!</h2>
+        </header>
+
+        <button id = "btn">Start</button>
+        <!-- second shown -->
+        <h3 id = "timer"></h3>
+        <br>
+        <section class = "pageTwo">
+            <form name = "quizForm" onsubmit="return sumbitAnswers()">
+                <h3>1. What team did the Philadelphia Eagles beat to win their first Superbowl Championship?</h3>
+                <input type="radio" name ="q1" value ="a" id ="q1a">a. Los Angeles Chargers<br>
+                <input type="radio" name ="q1" value ="b" id ="q1b">b. Denver Broncos<br>
+                <input type="radio" name ="q1" value ="c" id ="q1c">c. New England Patriots<br>
+                <input type="radio" name ="q1" value ="d" id ="q1d">d. Kansas City Cheifs<br>
+
+                <h3>2. The Philadelphia Eagles lost to which team in Superbowl XV?</h3>
+                <input type="radio" name ="q2" value ="a" id ="q2a">a. New England Patriots<br>
+                <input type="radio" name ="q2" value ="b" id ="q2b">b. Oakland Raiders<br>
+                <input type="radio" name ="q2" value ="c" id ="q2c">c. Pittsburg Steelers<br>
+                <input type="radio" name ="q2" value ="d" id ="q2d">d. Cincinatti Bengals<br>
+
+                <h3>3. Which game did the Philadelphia Eagles made their first Superbowl appearance?</h3>
+                <input type="radio" name ="q3" value ="a" id ="q3a">a. Superbowl XVI<br>
+                <input type="radio" name ="q3" value ="b" id ="q3b">b. Superbowl XII<br>
+                <input type="radio" name ="q3" value ="c" id ="q3c">c. Superbowl XIV<br>
+                <input type="radio" name ="q3" value ="d" id ="q3d">d. Superbowl XV<br>
+
+                <h3>4. Who was the Eagles' coach that advanced to the franchise's second Super Bowl appearance?</h3>
+                <input type="radio" name ="q4" value ="a" id ="q4a">a. Andy Reid<br>
+                <input type="radio" name ="q4" value ="b" id ="q4b">b. Ray Rhodes<br>
+                <input type="radio" name ="q4" value ="c" id ="q4c">c. Buck Shaw<br>
+                <input type="radio" name ="q4" value ="d" id ="q4d">d. Dick Vermiel<br>
+
+                <h3>5. The Philadelphia Eagles was established in 1931 as a replacement for what team?</h3>
+                <input type="radio" name ="q5" value ="a" id ="q5a">a. Pottsville Maroons<br>
+                <input type="radio" name ="q5" value ="b" id ="q5b">b. Philadelphia Quakers<br>
+                <input type="radio" name ="q5" value ="c" id ="q5c">c. Pennsylvania Keystoners<br>
+                <input type="radio" name ="q5" value ="d" id ="q5d">d. Frankford Yellow Jackets<br>
+
+                <h3>6. Philadelphia Eagles selected Donovan McNabb with what pick in the 1999 NFL Draft?</h3>
+                <input type="radio" name ="q6" value ="a" id ="q6a">a. Second Overall<br>
+                <input type="radio" name ="q6" value ="b" id ="q6b">b. First Overall<br>
+                <input type="radio" name ="q6" value ="c" id ="q6c">c. Third Overall<br>
+                <input type="radio" name ="q6" value ="d" id ="q6d">d. Fourth Overall<br>
+
+                <h3>7. Which former first overall draft pick signed with the Philadelphia Eagles in the 2009 season?</h3>
+                <input type="radio" name ="q7" value ="a" id ="q7a">a. David Carr<br>
+                <input type="radio" name ="q7" value ="b" id ="q7b">b. Carson Palmer<br>
+                <input type="radio" name ="q7" value ="c" id ="q7c">c. Michael Vick<br>
+                <input type="radio" name ="q7" value ="d" id ="q7d">d. Courtney Brown<br>
+
+                <h3>8. Eagles long-time starting quarterback Donovan McNabb was traded to which team in 2010?</h3>
+                <input type="radio" name ="q8" value ="a" id ="q8a">a. Green Bay Packers<br>
+                <input type="radio" name ="q8" value ="b" id ="q8b">b. Washington Redskins<br>
+                <input type="radio" name ="q8" value ="c" id ="q8c">c. New England Patriots<br>
+                <input type="radio" name ="q8" value ="d" id ="q8d">d. Minnesota Vikings<br>
+
+                <h3>9. Andy Reid coached the Philadelphia Eagles for how many seasons before being fired in 2012? </h3>
+                <input type="radio" name ="q9" value ="a" id ="q9a">a. 15<br>
+                <input type="radio" name ="q9" value ="b" id ="q9b">b. 13<br>
+                <input type="radio" name ="q9" value ="c" id ="q9c">c. 16<br>
+                <input type="radio" name ="q9" value ="d" id ="q9d">d. 14<br>
+
+                <h3>10. How many seasons did Donovan McNabb spend as a starting quarterback with the Eagles?</h3>
+                <input type="radio" name ="q10" value ="a" id ="q10a">a. 12<br>
+                <input type="radio" name ="q10" value ="b" id ="q10b">b. 10<br>
+                <input type="radio" name ="q10" value ="c" id ="q10c">c. 11<br>
+                <input type="radio" name ="q10" value ="d" id ="q10d">d. 13<br>
+                <br><br>
+                <input type="submit" value = "Sumbit Answers">
+            </form>
+        </section>
+        <!-- third shown = score -->
+        <div id = "thirdPage">
+            <h2 id ="done">All Done!</h2>
+            <h3 id = "right">Correct: </h3>
+            <h3 id = "wrong">Incorrect: </h3>
+        </div>
+    </div>
+    
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"></script>
+     <!-- Javascript File -->
+    <script type = "text/javascript" src = "assets/javascript/app.js"></script>
+</body>
+</html>
