@@ -1,5 +1,5 @@
 // global variables 
-
+var time;
 
 
 // $(document).ready(function () {
@@ -11,7 +11,7 @@
         $("#btn").hide();
 
         var sec = 120;
-        var time = setInterval(myTimer, 1000);
+         time = setInterval(myTimer, 1000);
         
         function myTimer() {
             document.getElementById('timer').innerHTML = "Time Remaining: " + sec + " Seconds left";
@@ -62,6 +62,7 @@
         $(".pageTwo").hide();
         $("btn").hide();
         $("#thirdPage").show();
+        clearInterval(time);
        
         
         return false; 
